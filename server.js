@@ -8,9 +8,10 @@ const app = express();
 const mongodb = require("mongodb");
 const mongoClient = mongodb.MongoClient
 
-const URL = "mongodb+srv://username:passwordenter@databases.lyvnjh1.mongodb.net/?retryWrites=true&w=majority";
+const URL = process.env.DB;
 const DB = "batch_37_Tamil";
 
+//// console.log(process), This is Global Value;
 
 let users = [];
 
