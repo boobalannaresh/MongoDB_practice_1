@@ -11,6 +11,7 @@ const mongoClient = mongodb.MongoClient
 const URL = process.env.DB;
 const DB = "batch_37_Tamil";
 
+const dotenv = require("dotenv").config()
 //// console.log(process), This is Global Value;
 
 let users = [];
@@ -193,3 +194,4 @@ app.delete("/aboutpost/:id", async function(req, res){
 })
 
 app.listen(process.env.PORT || 3000);
+// ------------------------------------------------------------------------------------------------------------------------- //
